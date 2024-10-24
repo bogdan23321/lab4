@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація на Турнір</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Реєстрація на Турнір</h1>
+    </header>
+
+    <main>
+        <form id="registration-form">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="team">Виберіть команду:</label>
+            <select id="team" name="team" required>
+                <option value="" disabled selected>Оберіть команду</option>
+                <option value="team1">Команда 1</option>
+                <option value="team2">Команда 2</option>
+                <option value="team3">Команда 3</option>
+            </select>
+
+            <button type="submit">Зареєструватися</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Турнір. Всі права захищені.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
