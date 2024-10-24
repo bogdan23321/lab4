@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бравл Старс Турнір</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Бравл Старс Турнір</div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Головна</a></li>
+                <li><a href="index.html">Каталог</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="feedback.html">Відгуки</a></li>
+            </ul>
+            <input type="search" name="search..." placeholder="Пошук..." id="search-lbl">
+        </nav>
+        <label for="modal-toggle" class="login-btn">Увійти</label>
+        <input type="checkbox" id="modal-toggle" class="modal-toggle">
+    </header>
+
+    <section class="content">
+        <aside>
+            <h2>Категорії</h2>
+            <p style="font-size: 14px; font-family: Georgia, 'Times New Roman', Times, serif;">( Не налаштовані Автором )</p>
+            <br>
+            <ul class="category-list">
+                <li>
+                    <a href="#" class="toggle-category">Персонажі</a>
+                    <ul class="subcategories">
+                        <li><a href="#">Бравлери</a></li>
+                        <li><a href="#">Шкури</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="toggle-category">Режими</a>
+                    <ul class="subcategories">
+                        <li><a href="#">Суперсалон</a></li>
+                        <li><a href="#">Грабіж</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="toggle-category">Івенти</a>
+                    <ul class="subcategories">
+                        <li><a href="#">Турніри</a></li>
+                        <li><a href="#">Спеціальні події</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="toggle-category">Поради</a>
+                    <ul class="subcategories">
+                        <li><a href="#">Тактики</a></li>
+                        <li><a href="#">Команди</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <main>
+            <h1>Турнір по Бравл Старс</h1>
+            <div class="product-grid">
+                <div class="product">
+                    <a href="https://www.youtube.com/watch?v=example1">
+                        <img src="image/brawl1.jpg" class="image" alt="Турнір 1">
+                    </a>
+                    <h3>Турнір 1</h3>
+                    <p>Битва найкращих бравлерів</p>
+                    <span>Дата: 20 жовтня 2024</span>
+                </div>
+                <div class="product">
+                    <a href="https://www.youtube.com/watch?v=example2">
+                        <img src="image/brawl2.jpg" class="image" alt="Турнір 2">
+                    </a>
+                    <h3>Турнір 2</h3>
+                    <p>Змагання у режимі Грабіж</p>
+                    <span>Дата: 27 жовтня 2024</span>
+                </div>
+                <div class="product">
+                    <a href="https://www.youtube.com/watch?v=example3">
+                        <img src="image/brawl3.jpg" class="image" alt="Турнір 3">
+                    </a>
+                    <h3>Турнір 3</h3>
+                    <p>Командний бій на арені</p>
+                    <span>Дата: 3 листопада 2024</span>
+                </div>
+                <div class="product" id="lab-img">
+                    <a href="https://www.youtube.com/watch?v=example4">
+                        <div class="image-container">
+                            <img src="image/brawl4.jpg" class="image" alt="Турнір 4">
+                            <div class="overlay">
+                                <h3>Турнір 4</h3>
+                                <p>Спеціальна подія з подарунками</p>
+                                <span>Дата: 10 листопада 2024</span>
+                                </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <footer>
+        <p>Типу крутий футер</p>
+    </footer>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Авторизація</h2>
+            <form>
+                <label for="username">Ім'я користувача:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Увійти</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
